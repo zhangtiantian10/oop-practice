@@ -17,6 +17,10 @@ class Teacher extends Person{
         }
         return `${super.introduce()} I am a Teacher. ${str}`
     }
+
+    isTeaching(student) {
+        return this.klasses.includes(student.klass);
+    }
 }
 
 export default Teacher;
